@@ -25,16 +25,11 @@ class MainActivity : AppCompatActivity() {
         btnCalculate.setOnClickListener {
 //            입력한 숫자 추출,
 
-            val inputNumber = edtNumber.text.toString().toInt() //입력한문구를 -> String으로 -> Int로 변환
+            val inputBirthYear = edtMessage.text.toString().toInt()
 
-//            숫자는 짝수인가? => 조건문 if문 활용
+            val age = 2022 - inputBirthYear + 1
+            Toast.makeText(this,"이 사람은 올해 ${age}세입니다.", Toast.LENGTH_SHORT).show()
 
-            if (inputNumber % 2 == 0){
-                Toast.makeText(this, "입력한 숫자는 짝수 입니다.", Toast.LENGTH_SHORT).show()
-            }
-            else{
-                Toast.makeText(this, "입력한 숫자는 홀수 입니다.", Toast.LENGTH_SHORT).show()
-            }
         }
 
     }
