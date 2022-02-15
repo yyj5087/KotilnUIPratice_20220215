@@ -37,11 +37,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <EditText
+        android:id="@+id/edtNumber"
         android:hint="정수 하나를 입력하세요."
         android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
+        android:id="@+id/btnCalculate"
         android:text="입력한 숫자는, 홀? 짝?"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
